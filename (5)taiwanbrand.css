@@ -1,0 +1,185 @@
+.grid-container2{
+    width: 95%;
+    /*height: 94.8vw;*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    /*background-image: linear-gradient(to right,rgb(255, 255, 255),rgb(250, 253, 86));*/
+    background-image: url('picture/pexels-karolina-grabowska-4039781.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin: 15px auto 0;
+}
+
+.grid-container2 > .cross2{
+    grid-area: 1 / 1 / 2 / 3;
+    width: 100%;
+    font-size: 7vw;
+    font-weight: 900;
+    letter-spacing: 3vw;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to top,rgb(255, 212, 133),rgb(255, 247, 180));
+    padding: 5px 0;
+    padding-left: 3vw;
+}
+
+.grid-container2 > div{
+    position: relative;
+    margin: 5vw 0;
+    width: 35vw;
+    height: 35vw;
+}
+
+.grid-container2 > div:nth-child(1){
+    height: auto;
+}
+
+.grid-container2 > div:not(:nth-child(1)){
+    background-color: white;
+}
+
+.grid-container2 > div > a > img{
+    width: 99%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s, width 0.3s;
+}
+
+.grid-container2 > div > a > img:nth-child(1){
+    opacity: 0;
+}
+
+.grid-container2 > div:hover > a > img:nth-child(1){
+    opacity: 1;
+}
+
+.grid-container2 > div:hover > a > img:nth-child(2){
+    opacity: 0.1;
+}
+
+.grid-container2 > div > a > span{
+    opacity: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+}
+
+.grid-container2 > .double{
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+@media (min-width: 400px){
+    .grid-container2{
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        height: 62vw;
+    }
+    
+    .grid-container2 > .cross2{
+        font-size: 31px;
+        grid-area: 1 / 1 / 2 / 4;
+        margin: 2vw 0;
+    }
+
+    .grid-container2 > .double{
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .grid-container2 > div{
+        position: relative;
+        margin: 5vw 0;
+        width: 27vw;
+        height: 27vw;
+    }
+}
+
+@media (min-width: 600px){
+    .grid-container2{
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        height: auto;
+    }
+    
+    .grid-container2 > .cross2{
+        font-size: 31px;
+        grid-area: 1 / 1 / 2 / 4;
+        margin: 2vw 0;
+    }
+
+    .grid-container2 > .double{
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .grid-container2 > div{
+        position: relative;
+        margin: 5vw 0;
+        width: 20vw;
+        height: 20vw;
+    }
+}
+
+@media  (min-width: 818px){
+    .grid-container2{
+        margin: 60px auto 0;
+    }
+}
+
+@media (min-width: 859px){
+    .grid-container2{
+        width: 800px;
+        height: 450px; /*347*/
+    }
+    .grid-container2 > .cross2{
+        width: 319px;
+        border-radius: 30px;
+        letter-spacing: 27px;
+        padding-left: 27px;
+    }
+    .grid-container2 > div{
+        margin: 0;
+        width: 240px; /*171*/
+        height: 350px;
+    }
+    .grid-container2 > div:nth-child(1){
+        margin: 0;
+        height: auto;
+    }
+    .grid-container2 > div > a > img{
+        margin: 0;
+        width: 170.5px;
+    }
+    .grid-container2 > div > a > img:nth-child(1){
+        opacity: 1;
+        top: 30%;
+        left: 50%;
+        -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
+    }
+    .grid-container2 > div > a > img:nth-child(2){
+        opacity: 1;
+        top: 80%;
+        left: 50%;
+    }
+    .grid-container2 > div:hover > a > img:nth-child(1){
+        width: 90%;
+        opacity: 1;
+    }
+    .grid-container2 > div:hover > a > img:nth-child(2){
+        opacity: 0.05;
+    }
+    .grid-container2 > div > a > span{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 0.3s, font-weight 0.3s;
+    }
+    .grid-container2 > div:hover > a > span{
+        opacity: 1;
+    }
+    .grid-container2 > div > a span:hover{
+        font-weight: 900;
+    }
+}

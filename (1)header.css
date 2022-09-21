@@ -1,0 +1,32 @@
+.title > h1{
+    font-family: 'ZCOOL KuaiLe', cursive;
+    color: aliceblue;
+    font-size: 40px;
+    letter-spacing: 10px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 255), 0 0 0.2em rgb(0, 0, 139);
+    text-align: center;
+}
+
+.title > p{
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    padding-left: 2px;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(198, 198, 204), 0 0 0.2em rgb(0, 0, 0);
+    text-align: center;
+}
+
+@media (min-width: 818px){
+    .title{
+        padding: 20px 0 0 0;
+    }
+    .title > h1{
+        font-size: 45px;
+    }
+    .title > p{
+        letter-spacing: 5px;
+        padding-left: 5px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,190 @@
+.flex-container{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to bottom,rgb(190, 220, 230),rgb(222, 227, 233),rgb(190, 220, 230));
+}
+
+.flex-container > div > a{
+    border-radius: 20px;
+    display: block;
+    font-size: 15px;
+    padding: 10px 2.2vw;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    /*transition: color 0.5s, background-image 0.5s;*/
+}
+
+.flex-container > div:nth-child(1) > a{
+    background-color: rgb(0, 11, 114);
+    color: rgb(255, 255, 255);
+}
+
+.flex-container > div a:link{
+    text-decoration: none;
+}
+
+.flex-container > div a:visited{
+    text-decoration: none;
+}
+
+.flex-container > div:hover:not(:nth-child(1)) > a{
+    background-image: linear-gradient(to bottom,rgb(190, 220, 230),rgb(37, 94, 134),rgb(190, 220, 230));
+    color: white;
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropdown2{
+    display: none;
+}
+
+@media (min-width: 450px){
+    .flex-container > div > a{
+        padding: 10px 5vw;
+    }
+}
+
+@media (min-width: 600px){
+    .flex-container > div > a{
+        padding: 12px 6vw;
+        letter-spacing: 2px;
+    }
+}
+
+@media (min-width: 818px){
+    .flex-container{
+        background-image: none;
+        width: 800px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .flex-container > div > a{
+        font-size: 17px;
+        letter-spacing: 3px;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        margin: 30px 0 30px 3px;
+        border-radius: 20px;
+        transition: color 0.3s ,background-color 0.3s;
+        /*margin: 10px 40px 10px 99px;*/
+    }
+
+    .flex-container > div > a:link{
+        text-decoration: none;
+    }
+    
+    .flex-container > div > a:visited{
+        text-decoration: none;
+    }
+    
+    .flex-container > div:hover:not(:nth-child(1)) > a{
+        background-image: none;
+        background-color: rgb(57, 112, 196);
+        color: rgb(255, 255, 255);
+    }
+    /*dropdown*/
+    .flex-container > div:nth-child(2){
+        position: relative;
+    }
+
+    .dropdown{
+        font-family: 'Cormorant SC', serif;
+        font-size: 19px;
+        font-weight: bold;
+        display: none;
+        z-index: 3;
+        position: absolute;
+        top: 78px;
+        left: -93px;
+        background-color: rgb(153, 175, 248);
+        border-radius: 20px;
+        width: 299px;
+    }
+
+    .dropdown::after{
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent rgb(153, 175, 248) transparent;
+    }
+
+    .dropdown a{
+        display: inline-block;
+        padding: 7px 15px;
+        text-align: justify;
+    }
+
+    .dropdown a:link{
+        color: black;
+    }
+
+    .dropdown a:visited{
+        color: black;
+    }
+
+    .dropdown a:hover{
+        color: white;
+    }
+
+    .flex-container > div:nth-child(2):hover .dropdown{
+        display: block;
+    }
+    /*dropdown2*/
+    .flex-container > div:nth-child(3){
+        position: relative;
+    }
+
+    .dropdown2{
+        font-size: 19px;
+        font-family: 'Cormorant SC', serif;
+        font-weight: bold;
+        display: none;
+        z-index: 3;
+        position: absolute;
+        top: 78px;
+        left: -78px;
+        background-color: rgb(153, 175, 248);
+        border-radius: 20px;
+        width: 266px;
+    }
+
+    .dropdown2::after{
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent transparent rgb(153, 175, 248) transparent;
+    }
+
+    .dropdown2 a{
+        display: inline-block;
+        padding: 7px 15px;
+        text-align: justify;
+    }
+
+    .dropdown2 a:link{
+        color: black;
+    }
+
+    .dropdown2 a:visited{
+        color: black;
+    }
+
+    .dropdown2 a:hover{
+        color: white;
+    }
+
+    .flex-container > div:nth-child(3):hover .dropdown2{
+        display: block;
+    }
+}
+

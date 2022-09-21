@@ -1,0 +1,95 @@
+.flex-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-items: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom,rgb(190, 220, 230),rgb(222, 227, 233),rgb(190, 220, 230));
+}
+
+.flex-container > div > a{
+    border-radius: 20px;
+    display: block;
+    font-size: 15px;
+    padding: 10px 2.2vw;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    /*transition: color 0.5s, background-image 0.5s;*/
+}
+
+.flex-container > div:nth-child(3) > a{
+    background-color: rgb(0, 11, 114);
+    color: rgb(255, 255, 255);
+}
+
+.flex-container > div:nth-child(5) > a{
+    background-color: rgb(0, 11, 114);
+    color: rgb(255, 255, 255);
+}
+
+.flex-container > div a:link{
+    text-decoration: none;
+}
+
+.flex-container > div a:visited{
+    text-decoration: none;
+}
+
+.flex-container > div:hover:not(:nth-child(3),:nth-child(5)) > a{
+    background-image: linear-gradient(to bottom,rgb(190, 220, 230),rgb(37, 94, 134),rgb(190, 220, 230));
+    color: white;
+}
+
+.flex-container > div > img{
+    height: 35px;
+}
+
+@media (min-width: 450px){
+    .flex-container > div > a{
+        padding: 10px 5vw;
+    }
+}
+
+@media (min-width: 600px){
+    .flex-container > div > a{
+        padding: 12px 6vw;
+        letter-spacing: 2px;
+}
+}
+
+@media (min-width: 818px){
+    .flex-container{
+        background-image: none;
+        width: 800px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    .flex-container > div > a{
+        font-size: 17px;
+        letter-spacing: 3px;
+        color: rgb(0, 0, 0);
+        padding: 10px 15px;
+        margin: 30px 0 30px 3px;
+        border-radius: 20px;
+        transition: color 0.3s ,background-color 0.3s;
+        /*margin: 10px 40px 10px 99px;*/
+    }
+
+    .flex-container > div > img{
+        height: 100px;
+    }
+
+    .flex-container > div > a:link{
+        text-decoration: none;
+    }
+    
+    .flex-container > div > a:visited{
+        text-decoration: none;
+    }
+    
+    .flex-container > div:hover:not(:nth-child(3),:nth-child(5)) > a{
+        background-image: none;
+        background-color: rgb(57, 112, 196);
+        color: rgb(255, 255, 255);
+    }
+    
+}

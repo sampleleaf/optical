@@ -1,0 +1,23 @@
+.body{
+    margin: 0;
+    padding-bottom: 30px;
+    /*background-image: linear-gradient(to right, rgb(230, 230, 230) , rgb(155, 155, 155));*/
+    background-image: linear-gradient(to right, rgb(212, 212, 212) , rgb(255, 255, 255) , rgb(212, 212, 212));
+}
+
+html {
+    scroll-behavior: smooth;/*href scroll*/
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+/*@media (min-width: 859px){
+    .body{
+        background-image: url('picture/pexels-kevin-menajang-982673.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
